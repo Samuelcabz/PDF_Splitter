@@ -24,8 +24,8 @@ def success():
     f.save(file)
     return render_template("success.html",start=st,end=en,name=file)
 
-@app.route("/convert")
-def cropper():
+@app.route("/convert/<st1>/<en1>/<file>")
+def cropper(st1,en1,file):
     pdfsplitter.cropper(st1,en1,file)
     return render_template("download.html",st1=st1,en1 = en1,file=file)
 
