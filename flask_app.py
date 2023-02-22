@@ -27,12 +27,12 @@ def success():
 @app.route("/convert")
 def cropper():
     pdfsplitter.cropper(st1,en1,file)
-    return render_template("download.html")
+    return render_template("download.html",st1=st1,en1 = en1,file=file)
 
 
 
-@app.route("/download")
-def download():
+@app.route("/download/<st1>/<en1>/<file>")
+def download(st1,en1,file):
     fnamestart = st1 +1
     fnameend = en1 +1
     filename=file.split(".")[0]+"_Page_"+str(fnamestart)+"_"+str(fnameend)+".pdf"
