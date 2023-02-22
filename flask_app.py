@@ -36,5 +36,5 @@ def download(st1,en1,file):
     fnamestart = int(st1) +1
     fnameend = int(en1) +1
     filename=file.split(".")[0]+"_Page_"+str(fnamestart)+"_"+str(fnameend)+".pdf"
-    return send_file(filename,as_attachment=True)
+    return send_file("/home/samieeee/PDF_Splitter/"+filename,as_attachment=True)
 

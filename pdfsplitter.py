@@ -5,7 +5,7 @@ def cropper(start,end,file):
     outPdf = PdfFileWriter()
     fnamestart = str(int(start)+1)
     fnameend = str(int(end)+1)
-    ostream=open(file.split(".")[0]+"_Page_"+str(fnamestart)+"_"+str(fnameend)+".pdf","wb")
+    ostream=open("/home/samieeee/PDF_Splitter/"+file.split(".")[0]+"_Page_"+str(fnamestart)+"_"+str(fnameend)+".pdf","wb")
 
     start = int(start)
     end = int(end)
