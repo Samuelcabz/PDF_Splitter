@@ -35,6 +35,6 @@ def cropper():
 def download():
     fnamestart = st1 +1
     fnameend = en1 +1
-    filename=file.split(".")[0]+" Page "+str(fnamestart)+"-"+str(fnameend)+".pdf"
+    filename=file.split(".")[0]+"_Page_"+str(fnamestart)+"_"+str(fnameend)+".pdf"
     return send_file(filename,as_attachment=True)
 
