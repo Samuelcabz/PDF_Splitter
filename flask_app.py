@@ -2,6 +2,9 @@ from flask import *
 import pdfsplitter
 app=Flask(__name__)
 
+global st1
+global en1
+global file
 
 @app.route("/")
 def upload():
@@ -10,9 +13,6 @@ def upload():
 
 @app.route("/success",methods=["POST"])
 def success():
-    global st1
-    global en1
-    global file
     st=int(request.form['start'])
     en=int(request.form['end'])
     st1=st-1
