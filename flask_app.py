@@ -2,9 +2,9 @@ from flask import *
 import pdfsplitter
 app=Flask(__name__)
 
-global st1
-global en1
-global file
+st1 = None
+en1 = None
+file = None
 
 @app.route("/")
 def upload():
