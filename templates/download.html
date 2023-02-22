@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<form action="/download" method = "get">
+        <h4> Successfully extracted!</h4><br>
+        <h4>Download your extracted file here!</h4><br>
+        <input type="submit" id="dl" class="btn btn-success" value="Download">
+</form>
+</div>
+</body>
+</html>
+<script>
+
+
+        Swal.fire({
+                  title: 'Do you want to download the file?',
+                  showDenyButton: true,
+                  showCancelButton: true,
+                  confirmButtonText: 'Yes',
+                  denyButtonText: `No`,
+                }).then((result) => {
+                  if (result.isConfirmed) {
+                    document.getElementById('dl').click();
+                    Swal.fire(
+  'Done',
+  '',
+  'success'
+)
+                    
+                  }
+                },
+                function() {
+                window.location = '/download';
+        })
+
+  
+     </script>
+{% endblock %}

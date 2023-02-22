@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+
+  <form method="get" action="/convert">
+    <div class="form-group">
+<h4>File uploaded successfully</h4><br>
+<br>
+<h4>File Name: {{name}}</h4>
+<br>
+<h4>Do you want to split pages from {{start}} to {{end}} ?</h4>
+<br>
+
+  <input type="submit" class="btn btn-dark" value="SPLIT!" style="border: solid 1px white">
+  </div>
+</form>
+</div>
+{% endblock %}

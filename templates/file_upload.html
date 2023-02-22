@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>PDF SPLITTER</h1>
+    
+    <h6 style="font-size: smaller; color: lightslategray;" > &nbsp; &nbsp; &nbsp;By: Samuel Cabagay</h6>
+    <hr><br>
+    
+    <form action = "/success" method = "post" enctype="multipart/form-data">
+        <div class="form-group">
+        Start Page: <br>
+        <input type ="text" name="start" required><br><br>
+        End Page: <br>
+        <input type="text" name="end" required><br><br>
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" required name="file" id="customFile">
+            <label class="custom-file-label" for="customFile">Choose file</label>
+          </div>
+          <br><br>
+        <input type = "submit" class="btn btn-dark" style="border: solid 1px white;" value="Upload">
+        </div>
+    </form>
+</div>
+
+<script>
+    $(".custom-file-input").on("change", function() {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
+
+    </script>
+
+{% endblock %}
