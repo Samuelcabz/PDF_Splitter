@@ -7,6 +7,8 @@ def cropper(start,end,file):
     fnameend = str(int(end)+1)
     ostream=open(file.split(".")[0]+"_Page_"+str(fnamestart)+"_"+str(fnameend)+".pdf","wb")
 
+    start = int(start)
+    end = int(end)
     while start <= end:
         outPdf.addPage(inputPdf.getPage(start))
         outPdf.write(ostream)
