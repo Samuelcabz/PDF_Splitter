@@ -35,6 +35,6 @@ def cropper(st1,en1,file):
 def download(st1,en1,file):
     fnamestart = int(st1) +1
     fnameend = int(en1) +1
-    filename=file.split(".")[0]+"-Page"+str(fnamestart)+"-"+str(fnameend)+".pdf"
+    filename=file.split(".")[0]+"-Page-"+str(fnamestart)+"-"+str(fnameend)+".pdf"
     return send_file("/home/samieeee/PDF_Splitter/"+filename,as_attachment=True)
 
