@@ -31,7 +31,7 @@ def cropper(st1,en1,file):
 
 
 
-@app.route("/download")
+@app.route("/download/<st1>/<en1>/<file>")
 def download(st1,en1,file):
     fnamestart = int(st1) +1
     fnameend = int(en1) +1
