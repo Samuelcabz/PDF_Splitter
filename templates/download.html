@@ -14,30 +14,5 @@
 </div>
 </body>
 </html>
-<script>
 
-
-        Swal.fire({
-                  title: 'Do you want to download the file?',
-                  showDenyButton: true,
-                  showCancelButton: true,
-                  confirmButtonText: 'Yes',
-                  denyButtonText: `No`,
-                }).then((result) => {
-                  if (result.isConfirmed) {
-                    document.getElementById('dl').click();
-                    Swal.fire(
-  'Done',
-  '',
-  'success'
-)
-                    
-                  }
-                },
-                function() {
-                window.location = '/download';
-        })
-
-  
-     </script>
 {% endblock %}
