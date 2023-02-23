@@ -58,10 +58,14 @@ body {
         <h2> Successfully extracted!</h2><br>
         <h2>Download your extracted file here!</h2><br><br>
         <h3>
-        <input type="submit" id="dl" class="btn btn-success" value="Download"></h3>
+        <input type="submit" id="dl" class="btn btn-success" style="display: none;" value="Download"></h3>
         </div>
 </form>
 </div>
+<script> 
+  window.onload = function(){
+  document.getElementById('dl').click();
+}</script>
 </body>
 </html>
 
