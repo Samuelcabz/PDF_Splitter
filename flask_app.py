@@ -6,8 +6,8 @@ st1 = None
 en1 = None
 file = None
 
-@app.route("/")
-def upload():
+@app.route("/fileupload")
+def fileupload():
     return render_template("file_upload.html")
 
 
