@@ -1,11 +1,26 @@
-from flask import *
+from flask import Flask, request, render_template, redirect
 import pdfsplitter
 app=Flask(__name__)
 
 
 @app.route("/")
-def upload():
-    return render_template("file_upload.html")
+def login():
+    return render_template("login.html")
+
+@app.route("/welcomepage")
+def welcomepage():
+    return render_template("welcomepage.html")
+
+@app.route("/checkform", methods=["POST"])
+def checkform():
+    if request.method == "POST":
+        username = request.form.get('username')
+        password = request.form.get('password')
+
+        if username == 'via' and password == 'yellow':
+            return redirect("/welcomepage")
+
+    return redirect("/") 
 
 
 @app.route("/success",methods=["POST"])
