@@ -7,6 +7,8 @@ app.secret_key = 'diaryyellowz'
 
 @app.route("/")
 def login():
+    if session.get('logged_in'):
+        session.clear() 
     return render_template("login.html")
 
 @app.route("/welcomepage")
@@ -23,7 +25,7 @@ def checkform():
         password = request.form.get('password')
 
         if username == 'via' and password == 'yellow':
-            session['logged_in'] = True  # Set a session variable to indicate login status.
+            session['logged_in'] = True
             return redirect("/welcomepage")
 
     return redirect("/")
