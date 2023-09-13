@@ -1,11 +1,7 @@
 from flask import *
 import pdfsplitter
-app=Flask(__name__)
-
-st1 = None
-en1 = None
-file = None
-
+app = Flask(__name__)
+app.secret_key = 'diaryyellowz'
 
 @app.route("/")
 def login():
@@ -13,7 +9,10 @@ def login():
 
 @app.route("/welcomepage")
 def welcomepage():
-    return render_template("welcomepage.html")
+    if 'logged_in' in session and session['logged_in']:
+        return render_template("welcomepage.html")
+    else:
+        return redirect("/")
 
 @app.route("/checkform", methods=["POST"])
 def checkform():
@@ -22,7 +21,10 @@ def checkform():
         password = request.form.get('password')
 
         if username == 'via' and password == 'yellow':
+            session['logged_in'] = True  # Set a session variable to indicate login status.
             return redirect("/welcomepage")
+
+    return redirect("/")
 
     return redirect("/") 
 
