@@ -14,7 +14,7 @@
                 <i class="fa fa-key" aria-hidden="true"></i>
             </div>
             <div class="col-lg-12 login-title">
-                SAMUEL <span style="color: #6384B3;">SECRET</span> WEB
+                SAMUEL <span style="color: #6384B3;">SECRET</span>WEB
             </div>
 
             <div class="col-lg-12 login-form">
@@ -33,17 +33,17 @@
                             <button type="submit" class="btn btn-info">LOGIN</button>
                         </div>
                     </div><br><br><br>
-                    <div class="col-lg-12 login-text" style="text-align: center; color: #FF6969;">
+                    <div class="col-lg-12 login-text" style="text-align: center;">
                         {% with messages = get_flashed_messages() %}
                         {% if messages %}
                         <div> <!-- Remove any classes and inline styles -->
                             {% for message in messages %}
-                            {{ message }}<br> <!-- Display the message text and add a line break after each message -->
+                            {{ message|replace('\n', '<br>')|safe }}<br> <!-- Use the 'safe' filter to render HTML tags -->
                             {% endfor %}
                         </div>
                         {% endif %}
                         {% endwith %}
-                    </div>
+                    </div> 
                 </form>
             </div>
           

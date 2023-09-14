@@ -28,7 +28,7 @@ def checkform():
             session['logged_in'] = True
             return redirect("/welcomepage")
         else:
-            flash('Incorrect username or password. Please try again.', 'error')
+            flash('<span style="color: #FF6969;">Incorrect username or password. Please try again.</span>\n<span style="color: #03C988;">Hint: The username is your name, and the password is your favorite color.</span>', 'error')
 
     return redirect("/")
 
