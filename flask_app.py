@@ -22,7 +22,7 @@ def checkform():
         username = request.form.get('username')
         password = request.form.get('password')
 
-        if username == 'via' and password == 'yellow':
+        if username == 'admin' and password == 'yellow':
             session['logged_in'] = True 
             return redirect("/welcomepage")
 
