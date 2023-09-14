@@ -23,11 +23,12 @@ def checkform():
         password = request.form.get('password')
 
         if username == 'admin' and password == 'yellow':
-            session['logged_in'] = True 
+            session['logged_in'] = True
             return redirect("/welcomepage")
+        else:
+            flash('Incorrect username or password. Please try again.', 'error')
 
     return redirect("/")
 
-    return redirect("/") 
 
 

@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect, session
+from flask import Flask, request, render_template, redirect, session, flash
 import pdfsplitter
 app = Flask(__name__)
 app.secret_key = 'diaryyellowz'
@@ -27,6 +27,8 @@ def checkform():
         if username == 'admin' and password == 'yellow':
             session['logged_in'] = True
             return redirect("/welcomepage")
+        else:
+            flash('Incorrect username or password. Please try again.', 'error')
 
     return redirect("/")
 
