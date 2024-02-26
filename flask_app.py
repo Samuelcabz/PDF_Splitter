@@ -22,11 +22,11 @@ def checkform():
         username = request.form.get('username')
         password = request.form.get('password')
 
-        if username == 'admin' and password == 'yellow':
+        if username == 'admin' and password == 'x541nsam':
             session['logged_in'] = True
             return redirect("/welcomepage")
         else:
-            flash('<span style="color: #FF6969;">Incorrect username or password. Please try again.</span>\n<span style="color: #03C988;">Hint: The username is your name, and the password is your favorite color.</span>', 'error')
+            flash('<span style="color: #FF6969;">Incorrect username or password. Please try again.</span>', 'error')
 
 
 
