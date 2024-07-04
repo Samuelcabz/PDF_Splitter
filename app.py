@@ -6,10 +6,8 @@ app.secret_key = 'diaryyellowz'
 
 
 @app.route("/")
-def login():
-    if session.get('logged_in'):
-        session.clear() 
-    return render_template("login.html")
+def index(): 
+    return render_template("index.html")
 
 @app.route("/welcomepage")
 def welcomepage():
