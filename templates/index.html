@@ -417,14 +417,14 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <video width="320" height="240" controls>
-  <source src="static/img/portfolio/video1.mp4" type="video/mp4">
+                <video width="320" height="240" controls oncontextmenu="return false;">
+  <source src="static/img/portfolio/video/video1.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
                 <div class="portfolio-info">
                   <h4>Video-Editing 1</h4>
                   <p></p>
-                  <a href="static/img/portfolio/video1.mp4" title="Video-Editing 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-play-fill"></i></a>
+                  <a href="static/img/portfolio/video/video1.mp4" title="Video-Editing 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-play-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -466,14 +466,14 @@ Your browser does not support the video tag.
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <video width="320" height="240" controls>
-  <source src="static/img/portfolio/video2.mp4" type="video/mp4">
+                <video width="320" height="240" controls oncontextmenu="return false;">
+  <source src="static/img/portfolio/video/video2.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
                 <div class="portfolio-info">
           <h4>Video-Editing 2</h4>
                   <p></p>
-                  <a href="static/img/portfolio/video2.mp4" title="Video-Editing 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-play-fill"></i></a>
+                  <a href="static/img/portfolio/video/video2.mp4" title="Video-Editing 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-play-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -529,14 +529,14 @@ Your browser does not support the video tag.
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <video width="320" height="240" controls>
-  <source src="static/img/portfolio/video3.mp4" type="video/mp4">
+                <video width="320" height="240" controls oncontextmenu="return false;">
+  <source src="static/img/portfolio/video/video3.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
                 <div class="portfolio-info">
          <h4>Video-Editing 3</h4>
                   <p></p>
-                  <a href="static/img/portfolio/video3.mp4" title="Video-Editing 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-play-fill"></i></a>
+                  <a href="static/img/portfolio/video/video3.mp4" title="Video-Editing 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-play-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -556,14 +556,14 @@ Your browser does not support the video tag.
 
                 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <video width="320" height="240" controls>
-  <source src="static/img/portfolio/video4.mp4" type="video/mp4">
+                <video width="320" height="240" controls oncontextmenu="return false;">
+  <source src="static/img/portfolio/video/video4.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
                 <div class="portfolio-info">
          <h4>Video-Editing 4</h4>
                   <p></p>
-                  <a href="static/img/portfolio/video4.mp4" title="Video-Editing 4" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-play-fill"></i></a>
+                  <a href="static/img/portfolio/video/video4.mp4" title="Video-Editing 4" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-play-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -871,6 +871,15 @@ Your browser does not support the video tag.
   <!-- Preloader -->
   <div id="preloader"></div>
   <script src="static/js/main.js"></script>
+<script>
+     document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
 
+        // Optional: Disable text selection to make copying harder
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+
+</script>
 
   {% endblock %}
