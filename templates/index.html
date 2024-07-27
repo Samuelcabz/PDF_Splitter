@@ -6,49 +6,871 @@
 
 {% block body %}
 
-  <header id="header" class="fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Sheila</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    <div class="profile-img">
+      <img src="static/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="active" href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/resume">Resume</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/portfolio">Portfolio</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+    <a href="/" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="static/img/logo.png" alt=""> -->
+      <h1 class="sitename">Samuel Cabagay</h1>
+    </a>
 
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+    <div class="social-links text-center">
+      <a href="https://x.com/samuelcabz" target="blank_" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://www.facebook.com/samuelcabz/" target="blank_" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/samuelcabz/" target="blank_" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/samuel-cabagay-84a8b71b9/" target="blank_" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#home" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <!-- <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li> -->
+       <!--  <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul>
+        </li> -->
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="static/img/kamown.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Samuel Cabagay</h2>
+        <p>I'm a <span class="typed" data-typed-items="Developer,Designer,  Freelancer">Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
-    </div>
+    </section><!-- /Hero Section -->
 
-  </header><!-- End Header -->
+    <!-- About Section -->
+    <section id="about" class="about section">
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
-      <h1 style="color: white;">Sheila Marie Perez</h1>
-      <h2 style="color:white; opacity: 80%;">Project Manager | SMM</h2>
-      <a href="/about" class="btn-about">About Me</a>
-    </div>
-  </section><!-- End Hero -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Hey there! I am Samuel Cabagay, an enthusiast programmer and designer who has a great passion. I have a diversity of skills as well as a commitment to making inventive online solutions; this is why in all my projects, I always ensure that they are designed with both technical expertise and creativity.</p>
+      </div>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-  <!-- Vendor JS Files -->
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="static/img/my-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>UI/UX Designer &amp; Web Developer.</h2>
+            <p class="fst-italic py-3">
+              Below you'll find my contact details and key information. Feel free to reach out. I look forward to connecting with you! </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>31 July 1998</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>http://samieeee.pythonanywhere.com/</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+63 9485810355</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Butuan City, Philippines</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor's degree in Information Technology.</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>samuelcabagay707@gmail.com</span></li>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> -->
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              Please don't hesitate to reach out using the contact details listed above. I'm enthusiastic about discussing potential collaborations, projects, or simply engaging in conversations about technology and design. Let's connect and explore how we can collaborate to accomplish your objectives!
+            </p>
+          </div>
+        </div>
 
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <!-- <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> --><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Below is a summary of my proficiency in programming, web development, and graphic design, each represented with progress bars indicating my expertise level in each area.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+             <div class="progress">
+              <span class="skill"><span>MYSQL</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Python</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Flask</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>React Native</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Photoshop</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Explore my educational background, achievements, and career experience. See how my skills and commitment have contributed to significant milestones and projects.</p>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Samuel A. Cabagay Jr.</h4>
+              <p><em>I would like to work in a job where I can use my skills and knowledge to learn new things and advance my career.</em></p>
+              <ul>
+                <li>Mahogany,Butuan City, Philippines</li>
+                <li>+63 9485810355</li>
+                <li>samuelcabagay707@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+    
+
+            <div class="resume-item">
+              <h4>Bachelor of Science in &amp; Information Technology</h4>
+              <h5>2015 - 2020</h5>
+              <p><em>Caraga State University Main Campus Butuan City, Philippines</em></p>
+              <p>Graduated with a Bachelor of Science in Information Technology from Caraga State University, Main Campus in Butuan City, Philippines. Experienced in web development, graphic design, IoT development, prototyping with Raspberry Pi and Arduino, and hardware programming. Developed a smart trash can for a thesis project that encourages proper waste segregation by sending notifications and monitoring its fill level to prevent overflow, enabling autonomous management without constant supervision.</p>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Certificates</h3>
+    
+
+            <div class="resume-item">
+              <h4>Advanced Styling with Responsive Design</h4>
+              <h5>Completed September 2020</h5>
+              <p><em>an online non-credit course authorized by University of Michigan and offered through Coursera</em></p>
+              
+              <h4>Graphic Design</h4>
+              <h5>Completed September 2020</h5>
+              <p><em>an online non-credit course authorized by University of Colorado Boulder and offered through Coursera</em></p>
+
+               <h4>Neural Networks and Deep Learning</h4>
+              <h5>Completed September 2020</h5>
+              <p><em>an online non-credit course authorized by DeepLearning.AI and offered through Coursera</em></p>
+
+              
+
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Experience</h3>
+            <div class="resume-item">
+              <h4>Computer Programmer II</h4>
+              <h5>November 2022 - July 2024</h5>
+              <p><em>Department of Trade and Industry (Rapid Growth Project - National Project Coordination Office) , Davao City, Philippines </em></p>
+              <ul>
+                <li>Developed an MSME (Micro, Samall, Medium Enterprises) dashboard with a user submission form, edit and delete functionalities, and a spreadsheet management feature for importing and exporting data using Excel.</li>
+                <li>Developed a data capture form dashboard featuring 10 forms for data uploads, each with its own dashboard displaying data counts and charts. The dashboard also includes features for uploading and exporting data using Excel. </li>
+                <li>Developed the DTI Rapid Knowledge Portal.</li>
+                <li>Link of the website: https://dtirapid.ph/</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>IT Support (Intern)</h4>
+              <h5>July - December 2019</h5>
+              <p><em>Department of Education Caraga Region, Philippines</em></p>
+              <ul>
+                <li>Developed Inventory System.</li>
+                <li>Monitoring and maintaining computer systems and networks.</li>
+                <li>Develop illustrations, flyers, logos and other designs using software.</li>
+                <li>Installing and configuring computer hardware, software, systems,networks, printers.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title"></h3>
+<br><br>
+             <div class="resume-item">
+
+             
+
+              <h4>AI for Everyone</h4>
+              <h5>Completed September 2020</h5>
+              <p><em>an online non-credit course authorized by DeepLearning.AI and offered through Coursera</em></p>
+
+              <h4>Machine Learning</h4>
+              <h5>Completed October 2020</h5>
+              <p><em>an online non-credit course authorized by Stanford University and offered through Coursera</em></p>
+
+              <h4>Certificate of Appreciation</h4>
+              <h5>June 13,2024</h5>
+              <p><em>The sharing of industry expertise, resources, and mentorship has been instrumental in enhancing the practical knowledge and skills for the interns.</em></p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Below is my portfolio, featuring a variety of projects and outputs.</p>
+      </div>
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Product</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-books">Video-Editing</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="static/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>Dti Rapid Website</p>
+                  <a href="static/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://dtirapid.ph" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="static/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 1</h4>
+                  <p>Faye & Spice Chili Garlic Oil</p>
+                  <a href="static/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=61558232520979" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+  
+           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="static/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 1</h4>
+                  <p>Faye & Spice</p>
+                  <a href="static/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=61558232520979" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <video width="320" height="240" controls>
+  <source src="static/img/portfolio/video1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+                <div class="portfolio-info">
+                  <h4>Video-Editing 1</h4>
+                  <p></p>
+                  <a href="static/img/portfolio/video1.mp4" title="Video-Editing 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-play-fill"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="static/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>DTI Rapid MSME (Micro,Small,Medium Enterprises) Dashboard</p>
+                  <a href="static/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://dtirapid.ph" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="static/img/portfolio/product-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 2</h4>
+             <p>Don's Chicken House Bistro</p>
+                  <a href="static/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=61559491990359" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="static/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 2</h4>
+                  <a href="static/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <video width="320" height="240" controls>
+  <source src="static/img/portfolio/video2.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+                <div class="portfolio-info">
+          <h4>Video-Editing 2</h4>
+                  <p></p>
+                  <a href="static/img/portfolio/video2.mp4" title="Video-Editing 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-play-fill"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="static/img/portfolio/app-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>DTI Rapid Data Capture Form Dashboard</p>
+                  <a href="static/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://dtirapid.ph" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+
+               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="static/img/portfolio/app-4.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 4</h4>
+                  <p>Alert on (Emergency mobile application)</p>
+                  <a href="static/img/portfolio/app-4.jpg" title="App 4" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+<!-- 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="static/img/portfolio/product-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 3</h4>
+                  <p></p>
+                  <a href="static/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="static/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+             <p>Don's Chicken House Bistro</p>
+                  <a href="static/img/portfolio/branding-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=61559491990359" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <video width="320" height="240" controls>
+  <source src="static/img/portfolio/video3.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+                <div class="portfolio-info">
+         <h4>Video-Editing 3</h4>
+                  <p></p>
+                  <a href="static/img/portfolio/video3.mp4" title="Video-Editing 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-play-fill"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="static/img/portfolio/branding-4.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 4</h4>
+                  <p></p>
+                  <a href="static/img/portfolio/branding-4.jpg" title="Branding 4" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div> 
+
+
+                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <video width="320" height="240" controls>
+  <source src="static/img/portfolio/video4.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+                <div class="portfolio-info">
+         <h4>Video-Editing 4</h4>
+                  <p></p>
+                  <a href="static/img/portfolio/video4.mp4" title="Video-Editing 4" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-play-fill"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+   <!--  <section id="services" class="services section">
+
+      
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> --><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Reviews</h2>
+<p>Below are feedback and reviews from my clients and colleagues, showcasing their experiences collaborating with me. These testimonials emphasize my commitment to delivering top-quality results, my teamwork skills, and the positive contributions I've made to their projects.</p>
+
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Samuel is good at completing tasks. He can finish the work by the deadline. He is a great developer, especially in front-end development.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="static/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Christian Bron</h3>
+                <h4>Information System Analyst<br><small>DTI Rapid Growth Project</small></h4>
+              </div>
+            </div>
+
+          <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>He can finish the work within the given time. He works overtime, can fix errors, and can complete tasks for adding features to the website.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="static/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sheila Marie Perez</h3>
+                <h4>Project Manager<br><small>Octoplus Media</small></h4>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Samuel is great to work with. He can help and teach better ways to develop websites, and in terms of deadlines, he can finish tasks ahead of time.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="static/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jay Balino</h3>
+                <h4>Information System Assistant<br><small>DTI Rapid Growth Project</small></h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Samuel has greatly helped my business. His logo and menu designs are excellent. He also creates ads and is great to work with.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="static/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Dexter Jay Galabay</h3>
+                <h4>Business Owner<br><small>Don's Chicken House Bistro</small></h4>
+              </div>
+            </div>
+  <!-- 
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="static/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="static/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div> -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Below are my contact details.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Mahoany, Butuan City Philippines</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Me</h3>
+                  <p>+63 9485810355</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Me</h3>
+                  <p>samuelcabagay707@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+      
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252277.0372089637!2d125.41763805287569!3d8.89551241160947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3301e998b1704fcf%3A0x85e95810384ea2d6!2sButuan%20City%2C%20Agusan%20Del%20Norte!5e0!3m2!1sen!2sph!4v1721346241861!5m2!1sen!2sph"  frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="" disabled>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="" disabled>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="" disabled>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required="" disabled></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit" disabled>Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div> <!-- End Contact Form
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+  <script src="static/js/main.js"></script>
 
 
   {% endblock %}

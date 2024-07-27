@@ -9,26 +9,6 @@ app.secret_key = 'diaryyellowz'
 def index(): 
     return render_template("index.html")
 
-@app.route("/about")
-def about(): 
-    return render_template("about.html")
-
-@app.route("/resume")
-def resume(): 
-    return render_template("resume.html")
-
-@app.route("/services")
-def services(): 
-    return render_template("services.html")
-
-@app.route("/portfolio")
-def portfolio(): 
-    return render_template("portfolio.html")
-
-@app.route("/contact")
-def contact(): 
-    return render_template("contact.html")
-
 @app.route("/welcomepage")
 def welcomepage():
     if 'logged_in' in session and session['logged_in']:
