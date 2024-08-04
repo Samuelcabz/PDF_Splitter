@@ -6,7 +6,7 @@ app.secret_key = 'diaryyellowz'
 
 
 @app.route("/")
-def index(): 
+def index():
     return render_template("index.html")
 
 @app.route("/welcomepage")
